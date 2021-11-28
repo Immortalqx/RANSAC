@@ -24,13 +24,15 @@ RANSAC是通过反复选择数据集去估计出模型，一直迭代到估计�
 
 ## 运行本项目
 
-克隆本项目：
+你可以通过下面的指令运行这篇博客介绍的RANSAC算法。
+
+**克隆本项目：**
 
 ```bash
 git clone https://github.com/Immortalqx/RANSAC.git
 ```
 
-运行C++部分的代码：
+**运行C++部分的代码：**
 
 ```bash
 cd RANSAC
@@ -41,7 +43,7 @@ make
 ./RANSAC
 ```
 
-运行python部分的代码：
+**运行python部分的代码：**
 
 ```bash
 #在平面中用ransac算法拟合直线
@@ -50,3 +52,8 @@ python3 RANSAC_2D.py
 python3 RANSAC_3D.py
 ```
 
+**运行结果：**
+
+![](./img/02.png)
+
+![](./img/03.png)
