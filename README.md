@@ -21,3 +21,32 @@ RANSAC是通过反复选择数据集去估计出模型，一直迭代到估计�
 3. 将所有数据带入这个模型，计算出“内点”的数目；(累加在一定误差范围内的适合当前迭代推出模型的数据)
 4. 比较当前模型和之前推出的最好的模型的“内点“的数量，记录最大“内点”数的模型参数和“内点”数；
 5. 重复1-4步，直到迭代结束或者当前模型已经足够好了(“内点数目大于一定数量”)。
+
+## 运行本项目
+
+克隆本项目：
+
+```bash
+git clone https://github.com/Immortalqx/RANSAC.git
+```
+
+运行C++部分的代码：
+
+```bash
+cd RANSAC
+mkdir build
+cd build
+cmake ..
+make
+./RANSAC
+```
+
+运行python部分的代码：
+
+```bash
+#在平面中用ransac算法拟合直线
+python3 RANSAC_2D.py
+#在点云中用ransac算法拟合平面
+python3 RANSAC_3D.py
+```
+
